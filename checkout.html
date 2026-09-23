@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Rainy Day Table</title>
+<meta name="description" content="Complete your Rainy Day Table order. Item prices, shipping and the tax position are all shown before payment.">
+<link rel="canonical" href="https://www.rainydaytable.com/checkout.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rainy Day Table">
+<meta property="og:title" content="Checkout — Rainy Day Table">
+<meta property="og:description" content="Complete your Rainy Day Table order. Item prices, shipping and the tax position are all shown before payment.">
+<meta property="og:url" content="https://www.rainydaytable.com/checkout.html">
+<meta property="og:image" content="https://www.rainydaytable.com/assets/images/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Checkout — Rainy Day Table">
+<meta name="twitter:description" content="Complete your Rainy Day Table order. Item prices, shipping and the tax position are all shown before payment.">
+<meta name="theme-color" content="#1B2A4A">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style"
+  href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap"></noscript>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="rd-head">
+  <div class="rd-head__strip">
+    <div class="wrap rd-head__strip-inner">
+      <p>Free standard shipping on US orders over $49 · 30 days returns</p>
+      <p>Questions? <a href="tel:+16085550118">(608) 555-0118</a> · Mon–Fri, 10:00 AM–6:00 PM ET</p>
+    </div>
+  </div>
+
+  <div class="wrap rd-head__inner">
+    <a class="rd-logo" href="/index.html">
+      <span class="rd-logo__tile" aria-hidden="true">RD</span>
+      <span class="rd-logo__text">Rainy Day<span>Table</span></span>
+    </a>
+
+    <button class="rd-menu" type="button" aria-expanded="false" aria-controls="sitenav">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+      <span class="rd-menu__label">Menu</span>
+    </button>
+
+    <nav class="rd-nav" id="sitenav" aria-label="Main">
+      <ul class="rd-nav__list"><li><a class="rd-nav__tile" href="/index.html">Home</a></li><li><a class="rd-nav__tile" href="/shop.html">Shop</a></li><li><a class="rd-nav__tile" href="/about.html">About</a></li><li><a class="rd-nav__tile" href="/faq.html">FAQ</a></li><li><a class="rd-nav__tile" href="/contact.html">Contact</a></li>
+        <li><a class="rd-nav__tile rd-nav__tile--cart" href="/cart.html">Cart
+          <span data-cart-count aria-live="polite">0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section">
+  <div class="wrap">
+    <h1>Checkout</h1>
+    <p class="lede">Every charge is listed below before you pay. There are no handling fees, service
+    fees or surcharges.</p>
+
+    <!-- The empty state is the DEFAULT rendered state, and the cart layout below is what
+         JavaScript reveals. The other way round costs a large layout shift: both blocks
+         hidden at parse time means the footer paints high on the page and is then pushed
+         down the moment the script runs. It also degrades honestly — the cart lives in
+         localStorage, so without JavaScript there is genuinely nothing in it. -->
+    <div data-cart-empty>
+      <div class="rd-panel">
+        <h2>Your cart is empty</h2>
+        <p>Add something to your cart first and the checkout will open.</p>
+        <a class="rd-btn rd-btn--mustard" href="/shop.html">Go to the shop</a>
+      </div>
+    </div>
+
+    <div class="rd-cartlayout" data-cart-layout hidden>
+      <form data-checkout novalidate>
+        <fieldset class="rd-fieldset">
+          <legend>Contact</legend>
+          <div class="rd-field">
+            <label for="email">Email address</label>
+            <span class="hint" id="email-hint">We use this only to send your order confirmation and shipping updates.</span>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-hint" required>
+          </div>
+          <div class="rd-field">
+            <label for="phone">Phone number (optional)</label>
+            <span class="hint" id="phone-hint">Only used if the carrier cannot find your address.</span>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-hint">
+          </div>
+          <p class="meta-line"><strong>Notice at collection:</strong> we collect your name, address,
+          email and optional phone number to fulfil this order, and your payment details go straight to
+          our payment processor. We do not sell or share personal information. See the
+          <a href="/policies/privacy.html">Privacy Policy</a>.</p>
+        </fieldset>
+
+        <fieldset class="rd-fieldset">
+          <legend>Shipping address</legend>
+          <p class="meta-line">We ship within the United States only.</p>
+          <div class="rd-cols2">
+            <div class="rd-field">
+              <label for="firstName">First name</label>
+              <input id="firstName" name="firstName" autocomplete="given-name" required>
+            </div>
+            <div class="rd-field">
+              <label for="lastName">Last name</label>
+              <input id="lastName" name="lastName" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="rd-field">
+            <label for="address1">Street address</label>
+            <input id="address1" name="address1" autocomplete="address-line1" required>
+          </div>
+          <div class="rd-field">
+            <label for="address2">Apartment, suite or unit (optional)</label>
+            <input id="address2" name="address2" autocomplete="address-line2">
+          </div>
+          <div class="rd-cols3">
+            <div class="rd-field">
+              <label for="city">City or town</label>
+              <input id="city" name="city" autocomplete="address-level2" required>
+            </div>
+            <div class="rd-field">
+              <label for="state">State</label>
+              <select id="state" name="state" autocomplete="address-level1" required>
+                <option value="">Choose a state</option>
+                <option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="DC">DC</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option>
+              </select>
+            </div>
+            <div class="rd-field">
+              <label for="zip">ZIP code</label>
+              <input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" required>
+            </div>
+          </div>
+          <div class="rd-field">
+            <label for="notes">Delivery notes (optional)</label>
+            <span class="hint" id="notes-hint">For example: leave with the neighbour at number 14.</span>
+            <textarea id="notes" name="notes" rows="3" aria-describedby="notes-hint"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="rd-fieldset">
+          <legend>Shipping method</legend>
+          <label class="rd-radio">
+            <input type="radio" name="shipping" value="standard" checked data-shipping>
+            <span>
+              <span class="rd-radio__label">Standard shipping — <span data-ship-price="standard">$5.95</span></span>
+              <span class="rd-radio__note">We ship within 1–2 business days; the carrier then takes 3–6 business days.</span>
+            </span>
+          </label><label class="rd-radio">
+            <input type="radio" name="shipping" value="expedited" data-shipping>
+            <span>
+              <span class="rd-radio__label">Expedited shipping — <span data-ship-price="expedited">$12.95</span></span>
+              <span class="rd-radio__note">We ship within 1–2 business days; the carrier then takes 2–3 business days.</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <button class="rd-btn rd-btn--mustard rd-btn--block" type="submit">Review my order</button>
+
+        <div class="rd-review" data-review hidden>
+          <h2 class="rd-h3">Order review</h2>
+          <p data-review-address></p>
+          <p data-review-shipping></p>
+
+          <!-- ==================================================================
+               PAYMENT INTEGRATION POINT
+
+               Mount the payment processor here — Stripe Payment Element, PayPal
+               Buttons, or a Shopify Buy Button. It must:
+
+                 1. Receive the server-recalculated total. Never trust the amount
+                    computed in this browser.
+                 2. Add sales tax for the delivery address before charging. The
+                    figure shown is deliberately labelled "total before tax" until
+                    that calculation exists.
+                 3. Create the order only after the processor confirms the payment,
+                    then redirect to a real confirmation page.
+                 4. Run over HTTPS with a valid certificate — Google Merchant Center
+                    requires a secured checkout.
+
+               Until a processor is connected, this build must never show a success
+               or confirmation screen. Claiming an order was placed when no payment
+               was taken is a Google Ads misrepresentation violation and an FTC
+               deception issue.
+               ================================================================== -->
+
+          <div class="rd-note rd-note--white">
+            <p><strong>No payment processor is connected to this site yet.</strong> Nothing has been
+            charged and no order has been placed. To buy any of these items today, call
+            (608) 555-0118 during Mon–Fri, 10:00 AM–6:00 PM ET or email
+            <a href="mailto:help@rainydaytable.com">help@rainydaytable.com</a>.</p>
+          </div>
+        </div>
+      </form>
+
+      <aside class="rd-summary" aria-label="Order summary">
+        <h2 class="rd-h3">Your order</h2>
+        <ul class="rd-minilist" data-cart-list></ul>
+        <div class="rd-sumrow"><span>Subtotal</span><strong data-subtotal>$0.00</strong></div>
+        <div class="rd-sumrow"><span>Shipping<br><span class="meta-line" data-ship-label>Standard shipping</span></span><strong data-shipping-cost>$0.00</strong></div>
+        <div class="rd-sumrow"><span>Sales tax</span><span class="meta-line">Added at the payment step from your delivery address</span></div>
+        <div class="rd-sumrow rd-sumrow--total"><span>Total before tax</span><strong data-total>$0.00</strong></div>
+        <p class="meta-line">By placing an order you accept our <a href="/policies/terms.html">Terms of
+        Service</a>. See the <a href="/policies/refund-returns.html">Refund &amp; Return Policy</a>
+        (30 days from delivery), the <a href="/policies/shipping.html">Shipping Policy</a>
+        and the <a href="/policies/privacy.html">Privacy Policy</a>. Questions before you order?
+        <a href="/contact.html">Contact us</a>.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="rd-footer">
+  <div class="wrap rd-footer__cols">
+    <div>
+      <p class="rd-footer__name">Rainy Day Table</p>
+      <p>Something to do at the kitchen table when the weather says no</p>
+      <address>
+        <strong>Rainy Day Table Goods LLC</strong><br>
+        3090 Linden Market Street, Suite 4<br>
+        Madison, WI 53703<br>
+        <a href="mailto:help@rainydaytable.com">help@rainydaytable.com</a><br>
+        <a href="tel:+16085550118">(608) 555-0118</a><br>
+        Mon–Fri, 10:00 AM–6:00 PM ET
+      </address>
+    </div>
+
+    <div>
+      <h2>Shop</h2>
+      <ul>
+        <li><a href="/shop.html">All products</a></li>
+        <li><a href="/shop.html?category=jigsaws">Jigsaws</a></li><li><a href="/shop.html?category=pencil-and-paper">Pencil &amp; Paper</a></li><li><a href="/shop.html?category=table-games">Table Games</a></li><li><a href="/shop.html?category=making-things">Making Things</a></li>
+        <li><a href="/cart.html">Your cart</a></li>
+      </ul>
+      <h2>Help</h2>
+      <ul>
+        <li><a href="/contact.html">Contact us</a></li>
+        <li><a href="/faq.html">Frequently asked questions</a></li>
+        <li><a href="/about.html">About Rainy Day Table</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="/policies/shipping.html">Shipping Policy</a></li><li><a href="/policies/refund-returns.html">Refund &amp; Return Policy</a></li><li><a href="/policies/privacy.html">Privacy Policy</a></li><li><a href="/policies/terms.html">Terms of Service</a></li><li><a href="/policies/accessibility.html">Accessibility Statement</a></li>
+        <li><a href="/policies/privacy.html#do-not-sell">Do Not Sell or Share My Personal Information</a></li>
+        <li><a href="/credits.html">Photo credits</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="rd-footer__bar">
+    <div class="wrap">
+      <p>© 2026 Rainy Day Table Goods LLC. Prices in US dollars. We ship within the United States only.
+         Policies effective September 8, 2026.
+         Product photographs are used under Creative Commons licences —
+         <a href="/credits.html">see the photo credits</a>.</p>
+    </div>
+  </div>
+</footer>
+<div class="rd-cookie" role="region" aria-label="Cookie notice" data-cookie hidden>
+  <p>We use a small number of cookies to keep your cart and to count visits. We do not use advertising
+     cookies and we do not sell or share personal information. Read the
+     <a href="/policies/privacy.html">Privacy Policy</a>.</p>
+  <button class="rd-btn rd-btn--small" type="button" data-cookie-dismiss>Got it</button>
+</div>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+{
+  "store": "03-rainy-day-table",
+  "storeName": "Rainy Day Table",
+  "outDir": "assets/images",
+  "width": 1200,
+  "aspect": "4:3",
+  "quality": 78,
+  "fallbackPalette": ["#1B2A4A", "#FBF3E0", "#DFA324"],
+  "_note": "Every image is pinned to an exact Wikimedia Commons file so the build is reproducible: an automated pick drifts between runs as categories change. queries remain as a fallback if a pinned file is ever deleted.",
+  "items": [
+    {
+      "slug": "hero",
+      "commonsFile": "Jigsaw puzzle solving 2",
+      "queries": ["jigsaw puzzle", "puzzle"],
+      "query": "jigsaw puzzle",
+      "alt": "A jigsaw puzzle part-assembled on a table with loose pieces around it."
+    },
+    {
+      "slug": "cat-jigsaw",
+      "commonsFile": "Jigsaw puzzle in progress",
+      "queries": ["jigsaw puzzle", "puzzle"],
+      "query": "jigsaw puzzle",
+      "alt": "A jigsaw puzzle in progress with sections joined."
+    },
+    {
+      "slug": "cat-paper",
+      "commonsFile": "Crossword puzzle",
+      "queries": ["crossword puzzle", "crossword"],
+      "query": "crossword puzzle",
+      "alt": "A printed crossword grid with a pencil resting on it."
+    },
+    {
+      "slug": "cat-games",
+      "commonsFile": "Table game of cards birds eye view",
+      "queries": ["playing cards table", "playing cards"],
+      "query": "playing cards table",
+      "alt": "A card game laid out on a table, seen from above."
+    },
+    {
+      "slug": "cat-making",
+      "commonsFile": "Knitting needles and yarn",
+      "queries": ["knitting needles yarn", "knitting"],
+      "query": "knitting needles yarn",
+      "alt": "Knitting needles resting on balls of yarn."
+    },
+    {
+      "slug": "rdt-301",
+      "commonsFile": "Close up of Hand Cut Jigsaw Puzzle",
+      "queries": ["jigsaw puzzle assembled", "jigsaw puzzle"],
+      "query": "jigsaw puzzle assembled",
+      "alt": "A close view of assembled jigsaw pieces showing the cut."
+    },
+    {
+      "slug": "rdt-302",
+      "commonsFile": "Jigsaw pieces with border",
+      "queries": ["jigsaw puzzle pieces", "jigsaw"],
+      "query": "jigsaw puzzle pieces",
+      "alt": "Jigsaw pieces with the border of the puzzle assembled."
+    },
+    {
+      "slug": "rdt-303",
+      "commonsFile": "Crossword IMG 8459",
+      "queries": ["crossword grid", "crossword"],
+      "query": "crossword grid",
+      "alt": "A crossword being filled in with a pencil."
+    },
+    {
+      "slug": "rdt-304",
+      "commonsFile": "Solar System Word Find",
+      "queries": ["word search puzzle", "wordsearch"],
+      "query": "word search puzzle",
+      "alt": "A word search grid of letters with a themed word list."
+    },
+    {
+      "slug": "rdt-305",
+      "commonsFile": "The oldest full deck of playing cards known (DT206401)",
+      "queries": ["playing cards deck", "playing cards"],
+      "query": "playing cards deck",
+      "alt": "A full deck of playing cards laid out face up."
+    },
+    {
+      "slug": "rdt-306",
+      "commonsFile": "A box of playing dominoes",
+      "queries": ["dominoes", "domino"],
+      "query": "dominoes",
+      "alt": "A boxed set of dominoes with the tiles visible."
+    },
+    {
+      "slug": "rdt-307",
+      "commonsFile": "Cribbage board with pegs1",
+      "queries": ["cribbage board", "cribbage"],
+      "query": "cribbage board",
+      "alt": "A wooden cribbage board with pegs in the holes."
+    },
+    {
+      "slug": "rdt-308",
+      "commonsFile": "Jigsaw Puzzle Accessory Jigsafe",
+      "queries": ["jigsaw puzzle accessory", "jigsaw"],
+      "query": "jigsaw puzzle accessory",
+      "alt": "A puzzle storage accessory holding an unfinished jigsaw."
+    },
+    {
+      "slug": "rdt-309",
+      "commonsFile": "Yarn ball",
+      "queries": ["yarn ball", "yarn"],
+      "query": "yarn ball",
+      "alt": "A ball of knitting yarn."
+    },
+    {
+      "slug": "rdt-310",
+      "commonsFile": "Jigsaw Puzzle Accessory Jigsort",
+      "queries": ["jigsaw puzzle accessory", "jigsaw"],
+      "query": "jigsaw puzzle accessory",
+      "alt": "A puzzle board with sorting drawers holding jigsaw pieces."
+    },
+    {
+      "slug": "rdt-311",
+      "commonsFile": "Jigsaw Puzzle Accessories Mixed",
+      "queries": ["jigsaw puzzle accessory", "puzzle pieces sorted"],
+      "query": "jigsaw puzzle accessory",
+      "alt": "Puzzle sorting trays holding separated jigsaw pieces."
+    },
+    {
+      "slug": "rdt-312",
+      "commonsFile": "Classic BINGO game (6679739315) (2)",
+      "queries": ["bingo game", "bingo"],
+      "query": "bingo game",
+      "alt": "A bingo set with cards and numbered balls."
+    }
+  ]
+}

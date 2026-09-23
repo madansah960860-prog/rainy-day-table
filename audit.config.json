@@ -1,0 +1,85 @@
+{
+  "storeName": "Rainy Day Table",
+  "type": "html",
+  "pagesGlob": "**/*.html",
+  "scanGlobs": [
+    "**/*.html",
+    "assets/css/*.css",
+    "assets/js/*.js",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "expectedPages": [
+    "index.html",
+    "shop.html",
+    "cart.html",
+    "checkout.html",
+    "about.html",
+    "contact.html",
+    "faq.html",
+    "credits.html",
+    "404.html",
+    "policies/privacy.html",
+    "policies/terms.html",
+    "policies/refund-returns.html",
+    "policies/shipping.html",
+    "policies/accessibility.html",
+    "products/harbour-morning-300-piece-large-jigsaw.html",
+    "products/orchard-lane-500-piece-large-jigsaw.html",
+    "products/large-print-crossword-book-120-puzzles.html",
+    "products/large-print-word-search-book-150-puzzles.html",
+    "products/bigface-playing-cards-2-decks.html",
+    "products/heavyweight-double-six-dominoes-set.html",
+    "products/maple-three-track-cribbage-board.html",
+    "products/rollaway-puzzle-mat-46x26-inch.html",
+    "products/first-rows-knitting-starter-kit.html",
+    "products/tabletop-puzzle-board-with-drawers.html",
+    "products/clearview-puzzle-sorting-trays-set-of-6.html",
+    "products/big-number-bingo-set-12-cards.html",
+    "robots.txt",
+    "sitemap.xml",
+    "favicon.svg"
+  ],
+  "business": {
+    "legalName": "Rainy Day Table Goods LLC",
+    "address": "3090 Linden Market Street, Suite 4, Madison, WI 53703",
+    "email": "help@rainydaytable.com",
+    "phone": "(608) 555-0118",
+    "hours": "Mon–Fri, 10:00 AM–6:00 PM ET",
+    "effectiveDate": "September 8, 2026",
+    "siteUrl": "https://www.rainydaytable.com"
+  },
+  "terms": {
+    "returnWindow": "30 days",
+    "freeShippingOver": "$49",
+    "standardShipping": "$5.95",
+    "processing": "1–2 business days",
+    "delivery": "3–6 business days",
+    "expedited": "$12.95"
+  },
+  "footerRequired": ["address", "email", "phone"],
+  "termPages": [
+    "policies/refund-returns.html",
+    "policies/shipping.html",
+    "faq.html"
+  ],
+  "catalogueSources": {
+    "data": "_generator/data/products.js",
+    "runtime": "assets/js/main.js"
+  },
+  "allow": [
+    "no customer reviews yet",
+    "reviews and testimonials",
+    "we do not buy, incentivise or write",
+    "we will not publish a review",
+    "there are no star ratings",
+    "testimonial or a review without asking",
+    "we do not use placeholder text as a label",
+    "we do not use &ldquo;best&rdquo;",
+    "have not won anything and neither have the dominoes",
+    "medical outcomes or treatment",
+    "benefits memory, concentration or cognition",
+    "is good for your memory"
+  ],
+  "_allow_note": "Each entry is a line of copy that states what this shop does NOT do. The scanner matches the forbidden word inside a disclaimer of that word; the copy itself is the opposite of a violation. Nothing here silences a real finding."
+}

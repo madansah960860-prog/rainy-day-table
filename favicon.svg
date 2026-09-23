@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Rainy Day Table">
+  <rect width="48" height="48" rx="8" fill="#1B2A4A"/>
+  <rect x="7" y="7" width="15" height="15" rx="3" fill="#DFA324"/>
+  <rect x="26" y="7" width="15" height="15" rx="3" fill="#FBF3E0"/>
+  <rect x="7" y="26" width="15" height="15" rx="3" fill="#FBF3E0"/>
+  <rect x="26" y="26" width="15" height="15" rx="3" fill="#B4503C"/>
+</svg>
